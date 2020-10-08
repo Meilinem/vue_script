@@ -1,12 +1,23 @@
 # Vue-cli manager scripts
-## Create a new project with his dependencies
-### it will create the repo app where you actually launch it
-	source initiate_anam_front.sh [app_name]
 
-## To update a current project modules
-### To update module in your current front app
-### pls lauch the following command in your app repo
-	bash update_modules.sh
+## New project with his dependencies
 
-## See more
-	bash update_modules.sh --help
+Use the following command will create the repo app where you actually launch it
+```bash
+	source initiate_anam_front.sh [app_name] #do not use capital letters in the app name
+```
+
+## Update a current project modules
+
+Use the following command in your app repo
+```bash
+	bash update_modules.sh [options]
+```
+Current modules available are:
+- Vuetify
+- Axios
+- I18n
+
+```bash
+	bash update_modules.sh --help #for more
+```

@@ -1,5 +1,5 @@
-# To initiate a project pls launch
-# it will create the repo app where you actually launch it
+# Vue-cli init front project
+## it will create the repo app where you actually launch it
 	source initiate_anam_front.sh [app_name]
 
 # To update module in your current front app

@@ -68,7 +68,14 @@ initiate_vuecli_project() {
 		npm install --save ../anam-library
 		ask_for_update
 		echo "Project [$appName] successfully initiate with vuetify && vue-axios"
-		npm run serve
+		echo "Run $app_name ? [y/n]"
+		read -u 0 rep
+		case $rep in
+			[Yy]* )
+				npm run serve;;
+			* )
+				return;;
+		esac
 	else
 		echo "Error in project creation"
 		return
@@ -78,9 +85,9 @@ initiate_vuecli_project() {
 case "${machine}" in
 	Mac)
 		if [ $(node -v 2>&-) ]; then
-			brew install node
-		else
 			echo "$(node -v) already installed"
+		else
+			brew install node
 		fi
 		if [ $(npm -v 2>&-) ]; then
 			echo "$(npm -v) already installed"

@@ -9,7 +9,7 @@ source initiate_anam_front.sh [app_name] #do not use capital letters in the app 
 
 ## Update a current project modules
 
-Use the following command in your app repo
+Use the following command in your app repository
 ```bash
 bash update_modules.sh [options]
 ```

@@ -2,7 +2,7 @@
 
 ## New project with his dependencies
 
-Use the following command will create the repo app where you are
+Use the following command to create the repo app where you are
 ```bash
 source initiate_anam_front.sh [app_name] #do not use capital letters in the app name
 ```
